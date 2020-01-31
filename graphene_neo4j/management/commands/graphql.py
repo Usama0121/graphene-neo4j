@@ -18,8 +18,8 @@ pythonic_init = """from .node import {model_name}Node
 pythonic_node = """#encoding=utf-8
 
 from lazy_import import lazy_module, lazy_callable
-from graphene_django import DjangoObjectType
-from graphene_django.relationship import EdgeNode # edge initialization
+from graphene_neo4j import DjangoObjectType
+from graphene_neo4j.relationship import EdgeNode # edge initialization
 from graphene.relay import Node
 
 # lazy_modules imports

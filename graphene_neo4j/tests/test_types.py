@@ -51,7 +51,7 @@ def test_django_interface():
     assert issubclass(Node, Node)
 
 
-@patch("graphene_django.tests.models.Article.objects.get", return_value=Article(id=1))
+@patch("graphene_neo4j.tests.models.Article.objects.get", return_value=Article(id=1))
 def test_django_get_node(get):
     article = Article.get_node(None, 1)
     get.assert_called_with(pk=1)

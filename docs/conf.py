@@ -317,7 +317,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    (master_doc, "graphene_django", u"Graphene Django Documentation", [author], 1)
+    (master_doc, "graphene_neo4j", u"Graphene Django Documentation", [author], 1)
 ]
 
 # If true, show URL addresses after external links.

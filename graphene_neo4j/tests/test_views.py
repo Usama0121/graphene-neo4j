@@ -411,7 +411,7 @@ def test_allows_post_with_get_operation_name(client):
     }
 
 
-@pytest.mark.urls("graphene_django.tests.urls_inherited")
+@pytest.mark.urls("graphene_neo4j.tests.urls_inherited")
 def test_inherited_class_with_attributes_works(client):
     inherited_url = "/graphql/inherited/"
     # Check schema and pretty attributes work
@@ -425,7 +425,7 @@ def test_inherited_class_with_attributes_works(client):
     assert response.status_code == 200
 
 
-@pytest.mark.urls("graphene_django.tests.urls_pretty")
+@pytest.mark.urls("graphene_neo4j.tests.urls_pretty")
 def test_supports_pretty_printing(client):
     response = client.get(url_string(query="{test}"))
 

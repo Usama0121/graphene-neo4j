@@ -38,7 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'graphene_django',
+    'graphene_neo4j',
 
     'cookbook.ingredients.apps.IngredientsConfig',
     'cookbook.recipes.apps.RecipesConfig',
@@ -58,7 +58,7 @@ GRAPHENE = {
     'SCHEMA': 'cookbook.schema.schema',
     'SCHEMA_INDENT': 2,
     'MIDDLEWARE': (
-        'graphene_django.debug.DjangoDebugMiddleware',
+        'graphene_neo4j.debug.DjangoDebugMiddleware',
     )
 }
 
