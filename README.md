@@ -27,7 +27,7 @@ Use basic graphene_django package in INSTALLED_APPS
 INSTALLED_APPS = (
     # ...
     'django.contrib.staticfiles', # Required for GraphiQL
-    'graphene_django',
+    'graphene_neo4j',
 )
 
 GRAPHENE = {

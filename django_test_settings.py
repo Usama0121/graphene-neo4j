@@ -7,9 +7,9 @@ sys.path.insert(0, ROOT_PATH + '/examples/')
 SECRET_KEY = 1
 
 INSTALLED_APPS = [
-    'graphene_django',
-    'graphene_django.rest_framework',
-    'graphene_django.tests',
+    'graphene_neo4j',
+    'graphene_neo4j.rest_framework',
+    'graphene_neo4j.tests',
     'starwars',
 ]
 
@@ -29,7 +29,7 @@ TEMPLATES = [
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'graphene_django.tests.schema_view.schema'
+    'SCHEMA': 'graphene_neo4j.tests.schema_view.schema'
 }
 
-ROOT_URLCONF = 'graphene_django.tests.urls'
+ROOT_URLCONF = 'graphene_neo4j.tests.urls'

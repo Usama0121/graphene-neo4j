@@ -4,7 +4,7 @@ For example your project's `settings.py` file might look like this:
 GRAPHENE = {
     'SCHEMA': 'my_app.schema.schema'
     'MIDDLEWARE': (
-        'graphene_django.debug.DjangoDebugMiddleware',
+        'graphene_neo4j.debug.DjangoDebugMiddleware',
     )
 }
 This module provides the `graphene_settings` object, that is used to access
@@ -40,7 +40,7 @@ DEFAULTS = {
 
 def init_midleware():
     if settings.DEBUG:
-        DEFAULTS["MIDDLEWARE"] += ("graphene_django.debug.DjangoDebugMiddleware",)
+        DEFAULTS["MIDDLEWARE"] += ("graphene_neo4j.debug.DjangoDebugMiddleware",)
 
 
 #  try:
@@ -93,7 +93,7 @@ class GrapheneSettings(object):
     """
     A settings object, that allows API settings to be accessed as properties.
     For example:
-        from graphene_django.settings import settings
+        from graphene_neo4j.settings import settings
         print(settings.SCHEMA)
     Any setting with string import paths will be automatically resolved
     and return the class, rather than the string literal.
